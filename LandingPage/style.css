@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative; /* for all parents */
+
+}
+.nav{
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid #dadada;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(3, 3, 3);
+    padding: 0 4vw;
+}
+.nav-part2{
+    /* color: whitesmoke; */
+    display: flex;
+    gap: 4vw;
+    align-items: center;
+    /* background-color: #3a3a3a; */
+
+}
+.nav h2{
+    font-size: 1.8vw;
+    font-weight: 800;
+}
+.nav h4{
+    font-size: 1.2vw;
+
+}
+.nav button{
+    font-size: 1vw;
+    padding: 0.6vw 1.4vw;
+    background-color: rgb(88, 88, 253);
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.nav i {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: none;
+    
+}
+
+.content{
+    height: calc(100% - 100px); /* to escape from scroll and to do cal */
+    width: 100%;
+    /* background-color: burlywood; */
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(202, 202, 251, 0.618);
+    padding: 10vw 8vw;
+}
+.left h1{
+    font-size: 3vw;
+}
+.left h1 span{
+    color: rgb(88, 88, 253);
+}
+.left p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    width: 80%;
+    /* margin-top: 1vw; */
+}
+button{
+    font-size: 1.3vw;
+    padding: 1vw 2vw;
+    background-color: rgb(88, 88, 253);
+    font-weight: 750;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.right{
+    height: 100%;
+    width: 45%;
+    /* background-color: brown; */
+}
+.right img{
+    height: 100%;
+    width: 100%;
+
+}
+@media (max-width: 600px){
+    .nav{
+        color: black;
+        padding: 5vw;
+        background-color: white;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 5vw;
+    }
+    .nav-part2 h4{
+        font-size: 2.6vw;
+        display: none;
+    }
+    .nav i{
+        display: block;
+        font-size: 5vw;
+    }
+    .nav button{
+        font-size: 4vw;
+        padding: 1vw 3vw;
+        background-color: rgb(88, 88, 253);
+        font-weight: 700;
+        color: #fff;
+        border: none;
+        display: none;
+        border-radius: 5px;
+    }
+    .content{
+        height: calc(100% - 60px); /* to escape from scroll and to do cal */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .left {
+        background-color: transparent; /* or any other color you want */
+        width: 100%;
+        height: 50%;
+        padding: 4vw 6vw;
+    }
+
+    .left h1{
+        font-size: 10vw;
+        line-height: 6.2vh;
+
+    }
+    .left h1 span{
+        color: rgb(88, 88, 253);
+    }
+    .left p{
+        font-size: 3vw;
+        font-weight: 500;
+        width: 90%;
+        margin-top: 1vw;
+    } 
+    button{
+        font-size: 4vw;
+        padding: 2.5vw 4vw;
+        background-color: rgb(88, 88, 253);
+        font-weight: 750;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    .right{
+        height: 50%;
+        width: 100%;
+        /* background-color: brown; */
+    }
+    .right img{
+        height: 100%;
+        width: 100%;
+        
+    
+    }
+}
