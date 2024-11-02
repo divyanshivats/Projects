@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.nav {
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 2vw;
+
+}
+.nav-list{
+    display: flex;
+    gap: 3vw;
+    padding: 2vw;
+    align-items: center;
+    
+}
+.nav h1{
+    font-size: 1.8vw;
+    font-weight: 900;
+}
+.nav-list h3{
+    font-size: 1vw;
+}
+.nav-list i{
+    font-size: 1.2vw;
+    font-weight: bolder;
+}
+#menu{
+    display: none;
+}
+.nav-list button{
+    border: none;
+    padding: 0.6vw 1vw;
+    border-radius: 2px;
+    font-size: 1vw;
+    font-weight: 600;
+    background-color: rgb(81, 10, 81);
+    color: whitesmoke;
+}
+.content{
+    height: calc(100% - 60px);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(28, 6, 28);
+}
+
+.left{
+    height: 100%;
+    /* background-color: #212121; */
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-position: center;
+}
+.right{
+    height: 100%;
+    /* background-color: rgb(255, 0, 0); */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#box{
+    height: 45vh;
+    width: 30vw;
+    background-color: rgba(100, 54, 54, 0.1);
+    /* opacity: 0.2; */
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    padding: 1vw 2vw;
+    margin-left: 20vh;  /* Adjust the value as needed */
+   
+    
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+    
+    
+   /* text-align: center; */
+}
+.last{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 2vw;
+    padding: 1vw 1vw;
+}
+.disco{
+    border: none;
+    padding: 0.5vw 1vw;
+    border-radius: 2px;
+    font-size: 1vw;
+    font-weight: 600;
+    background-color: rgba(250, 163, 13, 0.874);
+    color: whitesmoke;
+}
+.title{
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: white !important;
+}
+.market{
+    font-size: 1.2vw;
+    color: rgba(255,255,255, 0.8);
+}
+.about{
+    font-size: 1vw;
+    color: rgba(255,255,255, 0.8);
+}
+a{
+    color: white;
+}
+@media (max-width: 600px){
+    .nav {
+        /* width: 100%; */
+        height: 60px;
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vw 1vw;
+    
+    }
+    .nav-list{
+        display: flex;
+        gap: 3vw;
+        padding: 1vw 2vw;
+        align-items: center;
+        
+    }
+    .nav h1{
+        font-size: 3vw;
+        font-weight: 900;
+    }
+    .nav-list h3{
+        font-size: 9vw;
+        display: none;
+    }
+    .nav-list i{
+        font-size: 4vw;
+        font-weight: bolder;
+    }
+   #menu{
+    display: block;
+   }
+   .nav-list button{
+    border: none;
+    padding: 1vw 2vw;
+    border-radius: 2px;
+    font-size: 3vw;
+    font-weight: 600;
+    background-color:  rgb(81, 10, 81);
+    color: whitesmoke;
+}
+    .content{
+        height: calc(100% - 60px);
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    .left{
+        height: 100%;
+        /* background-color: #212121; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+        width: 0;
+    
+    }
+    #box{
+        margin: 0 auto;  /* Centers the box horizontally within its parent */
+        margin-top: 10px;
+        height: 40vh;
+        width: 80vw;
+        background-color: rgba(255, 255, 255, 0.5); 
+        padding: 1vw 2vw;
+        opacity: 0.8;
+        backdrop-filter: blur(20px);
+        border-radius: 8px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        /* justify-content: center;
+        align-items: center; */
+        
+        
+       /* text-align: center; */
+    }
+    .title{
+        font-size: 7vw;
+        font-weight: 700;
+    }
+    .market{
+        font-size: 4vw;
+    }
+    .about{
+        font-size: 2vw;
+    }
+    .last{
+        
+        gap: 3vw; 
+    }
+    .disco{
+        border: none;
+        padding: 1vw 2vw;
+        border-radius: 3px;
+        font-size: 3vw;
+        font-weight: 600;
+        background-color: rgb(81, 10, 81);
+        color: whitesmoke;
+    }
+    a{
+        font-size: 2vw;
+    }
+
+
+}
+
+.cards{
+    height: 50vh;
+    width: 50vw;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20vh;
+    gap: 2vw;
+}
+.card1{
+    height: 45vh;
+    width: 15vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+.card1 img{
+    height: 42vh;
+    width: 15vw;
+    padding: 1.5vw 1vw;
+    border: none;
+    border-radius: 2px;
+  
+
+}
+.phoent{
+    position: absolute; 
+    bottom: 0;
+    color: rgb(0, 0, 0);
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    text-align: center; /* Center text horizontally */
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    padding: 0; /* Optional: padding for better readability */
+    /* border-radius: 5px; */
+}
+.card1 h3{
+    /* align-items: end; */
+    font-size: 1.2vw;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    padding-left: 5px;
+}
+.card1 p{
+    font-size: 0.8vw;
+    text-align: center;
+    width: 100%; /* Optional: make sure it takes full width */
+    margin: 0; /* Remove default margin for better alignment */
+    /* padding-left: 0.5px;  */
+}
+
+.card2{
+    height: 45vh;
+    width: 15vw;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2);
+}
+.card2 img{
+    height: 42vh;
+    width: 15vw;
+    padding: 1.5vw 1vw;
+    border: none;
+    border-radius: 2px;
+  
+
+}
+.phoent2{
+    position: absolute; 
+    bottom: 0;
+    color: rgb(0, 0, 0);
+    left: 0; /* Align to the left */
+    right: 0; /* Stretch to the right */
+    text-align: center; /* Center text horizontally */
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    padding: 0; /* Optional: padding for better readability */
+    /* border-radius: 5px; */
+}
+.card2 h3{
+    /* align-items: end; */
+    font-size: 1.2vw;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    padding-left: 5px;
+}
+.card2 p{
+    font-size: 0.8vw;
+    text-align: center;
+    width: 100%; /* Optional: make sure it takes full width */
+    margin: 0; /* Remove default margin for better alignment */
+    /* padding-left: 0.5px;  */
+}
