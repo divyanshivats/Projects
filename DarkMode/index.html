@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Theme</title>
+    <script defer src="script.js"></script>
+</head>
+<style>
+    body {
+        background-color: #fcf8f8;
+        color: white;
+    }
+
+    .dark-mode {
+        background-color: #242424;
+        color: white;
+    }
+
+    .toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .ui-switch input {
+        display: none;
+    }
+
+    .slider {
+        width: 50px;
+        height: 24px;
+        background: gray;
+        border-radius: 50px;
+        position: relative;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .slider .circle {
+        width: 20px;
+        height: 20px;
+        background: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        transition: transform 0.3s;
+    }
+
+    .ui-switch input:checked + .slider {
+        background: black;
+    }
+
+    .ui-switch input:checked + .slider .circle {
+        transform: translateX(26px);
+    }
+</style>
+<body>
+    <div class="toggle">
+        <label class="ui-switch">
+            <input type="checkbox" id="darkModeToggle">
+            <div class="slider">
+                <div class="circle"></div>
+            </div>
+        </label>
+    </div>
+</body>
+</html>

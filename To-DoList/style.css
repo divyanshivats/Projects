@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+
+h2{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.main{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    
+}
+.card{
+    
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 25px;      
+}
+
+.head{
+    margin-top: 30px;
+    margin-left: 10px;
+
+}
+.head h2{
+    font-family: sans-serif;
+}
+.list{
+    list-style-type: none;
+}
+.list li {
+    display: flex;            /* Flexbox to align items horizontally */
+    align-items: center;      /* Vertically align checkbox and text */
+    margin: 10px 50px;
+    gap: 10px;            /* Optional: Add spacing between items */
+}
+.task-completed{
+    text-decoration: line-through;
+    color: grey;
+}
+.btn{
+    padding: 6px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 10px 40px 20px;
+}
